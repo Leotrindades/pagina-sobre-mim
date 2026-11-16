@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px;
+            padding: 0 16px;
+            text-align: center;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        h1 {
+            color: #1d4e89;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        h2 {
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 4px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #1d4e89;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: nonec;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leonardo Souza</h1>
+    <img src="foto2.jpg" alt="Foto do Leonardo">
+    <p>Me chamo Leonardo, sou brasileiro, do estado do Pará, cidade Belém, tenho 38 anos, sou casado e não tenho filhos. </p>
+
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Jogar Video Game</li>
+        <li>Passear com a familia</li>
+        <li>Assistir filmes e séries</li>
+    </ul>
+    <h2>Contatos</h2>
+    <ul>
+        <li><a href="coloqueseuemail@gmail.com">Meu e-mail</a></li>
+        <li><a href="https://wa.me/55999999999">Meu WhatsApps</a></li>
+    </ul>
+
+    <h2>Teste</h2>
+    <p id="mensagem">Clique no botão abaixo</p>
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+    <button onclick="mudarCor()">Mudar cor de fundo</button>
+
+    <footer>
+        <p>Feito por Leonardo Souza</p>
+    </footer>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").textContent = "Olá! Estou aprendendo programação com o Claude."
+        }
+
+        let rosa = false;
+
+        function mudarCor() {
+            if (rosa === false) {
+                document.body.style.backgroundColor = "#fde8e8";
+                rosa = true;
+            } else {
+                document.body.style.backgroundColor = "#f4f6f8";
+                rosa = false;
+            }
+        }
+    </script>
+    
+</body>
+</html>
